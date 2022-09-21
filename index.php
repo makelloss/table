@@ -1,22 +1,10 @@
 <?php
-$rows = rand (1,10); // количество строк, tr
-$cols = 2; // количество столбцов, td
-
-echo '<table border="1">';
-
-for ($tr=1; $tr<=$rows; $tr++){ // в этом цикле счётчик $tr 
-    // следит за количеством строк и всегда равен текущему номеру строки.
-    // То есть в начале $tr=1, так как в начале у нас 1 строка, затем
-    // каждый раз прибавляем единицу, пока не дойдём до заданного количества
-    // $rows.
-    echo '<tr>';
-    for ($td=1; $td<=$cols; $td++){ // в этом цикле счётчик $td аналогичен
-                                    // счётчику $tr.
-        echo '<td>'.$td*$tr.'</td>';
-    }
-    echo '</tr>';
+print "<table style=\"border:solid;\">";
+for ($i = 0; $i <= 10; $i++) {
+    print "<tr><td style=\"border:solid;\">$i</td><td style=\"border:solid;\"></td></tr>";
 }
-
-echo '</table>';
-
-?>
+for ($a = 1; $a <= 10; $a++) {
+    
+    print "<img src=\"images/1.png\"width=\"50\"\"height =\"50\">";
+}
+print "</table>";
